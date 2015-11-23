@@ -1,10 +1,16 @@
 var express = require("express");
 var session = require("express-session");
+var bodyParser = require('body-parser');
 var cookieParser = require("cookie-parser");
 var routes = require("./routes");
 var pport = require('./pport');
 
 var app = express();
+
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+app.use(bodyParser.json());
 
 app.use(cookieParser());
 app.use(session({
