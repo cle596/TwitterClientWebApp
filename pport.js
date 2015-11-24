@@ -11,7 +11,7 @@ pport.passport = require("passport");
 pport.passport.use(new Strategy({
   consumerKey: "cBFrUcFGSvD4NCrjatPMB4o8D",
   consumerSecret: "aRIUNlNBweeAVVDSaYwqvasgAZ7cdcG4Cf2Vxp3BukqeSRtYwb",
-  callbackURL: 'http://localhost:8000/login'
+  callbackURL: 'http://10.0.1.27:8000/login'
 }, function(token, tokenSecret, profile, cb) {
   pport.utoken = token;
   pport.utokenSecret = tokenSecret;

@@ -24,7 +24,7 @@ router.post(
       },
       function(e, data, resp) {
         if (e) console.error(e);
-        console.log(require('util').inspect(data));
+        //console.log(require('util').inspect(data));
         res.redirect("/");
       }
     );
